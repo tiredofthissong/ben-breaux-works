@@ -36,6 +36,7 @@ A portfolio of **Customer Success** and **Technical Account Management** dashboa
 - Code: `dashboards/public_sector_outcomes_pinyin.py`  
 - Data: `data/gonggong xiangmu_chengguo.csv`  
 - Screenshot: `screenshots/public_sector_dashboard.png`
+![Adoption Dashboard](screenshots/adoption_dashboard.png)
 
 ---
 
