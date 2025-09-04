@@ -37,6 +37,9 @@ Demonstrates how technical dashboards can communicate outcomes for public instit
 - `data/` → Sample CSVs  
 - `screenshots/` → Ready-to-use PNGs  
 - `index.html` → Clean gallery view for GitHub Pages  
+- [TAM Implementation Playbook (PDF)](TAM_Implementation_Playbook.pdf)  
+- [Escalation Runbook (PDF)](TAM_Escalation_Runbook.pdf)  
+- [Case Study: Public Sector Revamp](CASE_STUDY.md)  
 
 ---
 
