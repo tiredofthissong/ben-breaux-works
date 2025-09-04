@@ -18,9 +18,7 @@
   <div class="muted">Before/after outcomes (pinyin labels).</div>
   <div id="vis"></div>
   <script type="text/javascript">
-    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "transform": [{"fold": ["gailiang qian", "gailiang hou"], "as": ["shijian", "zhi"]}], "mark": "bar", "encoding": {"x": {"field": "xiangmu", "type": "nominal", "title": "xiangmu"}, "y": {"field": "zhi", "type": "quantitative", "title": "zhi"}, "color": {"field": "shijian", "type": "nominal", "title": ""}, "tooltip": [{"field": "xiangmu"}, {"field": "shijian"}, {"field": "zhi"}]}, "width": "container"};
-    spec.data = spec.data || {};
-    spec.data.url = "data/gonggong xiangmu_chengguo.csv";
+    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"values": [{"xiangmu": "huanzhe fuwu liang", "gailiang qian": 1000, "gailiang hou": 1650}, {"xiangmu": "renyuan peixun wanchenglv", "gailiang qian": 62, "gailiang hou": 91}]}, "transform": [{"fold": ["gailiang qian", "gailiang hou"], "as": ["shijian", "zhi"]}], "mark": "bar", "encoding": {"x": {"field": "xiangmu", "type": "nominal", "title": "xiangmu"}, "y": {"field": "zhi", "type": "quantitative", "title": "zhi"}, "color": {"field": "shijian", "type": "nominal", "title": ""}, "tooltip": [{"field": "xiangmu"}, {"field": "shijian"}, {"field": "zhi"}]}, "width": "container"};
     vegaEmbed('#vis', spec, {actions:false});
   </script>
   <p><a href="index.html">← Back to gallery</a></p>

@@ -18,9 +18,7 @@
   <div class="muted">Hover to explore usage trends.</div>
   <div id="vis"></div>
   <script type="text/javascript">
-    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "mark": {"type": "line", "point": true}, "encoding": {"x": {"field": "month", "type": "ordinal", "title": "Month"}, "y": {"field": "adoption_percent", "type": "quantitative", "title": "Active Users (% of licenses)"}, "tooltip": [{"field": "month"}, {"field": "adoption_percent"}]}, "width": "container"};
-    spec.data = spec.data || {};
-    spec.data.url = "data/adoption_metrics.csv";
+    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"values": [{"month": "2024-01", "adoption_percent": 12}, {"month": "2024-02", "adoption_percent": 20}]}, "mark": {"type": "line", "point": true}, "encoding": {"x": {"field": "month", "type": "ordinal", "title": "Month"}, "y": {"field": "adoption_percent", "type": "quantitative", "title": "Active Users (% of licenses)"}, "tooltip": [{"field": "month"}, {"field": "adoption_percent"}]}, "width": "container"};
     vegaEmbed('#vis', spec, {actions:false});
   </script>
   <p><a href="index.html">← Back to gallery</a></p>

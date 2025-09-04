@@ -18,9 +18,7 @@
   <div class="muted">Hover for exact values. Ideal for QBRs.</div>
   <div id="vis"></div>
   <script type="text/javascript">
-    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "mark": "bar", "encoding": {"x": {"field": "metric", "type": "nominal", "title": "Metric"}, "y": {"field": "value", "type": "quantitative", "title": "Value"}, "tooltip": [{"field": "metric"}, {"field": "value"}]}, "width": "container"};
-    spec.data = spec.data || {};
-    spec.data.url = "data/account_health.csv";
+    const spec = {"$schema": "https://vega.github.io/schema/vega-lite/v5.json", "data": {"values": [{"metric": "NRR", "value": 118.0}, {"metric": "GRR", "value": 96.0}, {"metric": "CSAT", "value": 4.6}, {"metric": "Time-to-Value (days)", "value": 24.0}]}, "mark": "bar", "encoding": {"x": {"field": "metric", "type": "nominal", "title": "Metric"}, "y": {"field": "value", "type": "quantitative", "title": "Value"}, "tooltip": [{"field": "metric"}, {"field": "value"}]}, "width": "container"};
     vegaEmbed('#vis', spec, {actions:false});
   </script>
   <p><a href="index.html">← Back to gallery</a></p>
