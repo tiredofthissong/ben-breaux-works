@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ben-breaux-works</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,sans-serif;margin:40px;line-height:1.5}
+    h1{margin-bottom:0.2rem} .muted{color:#666}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:24px}
+    .card{border:1px solid #e5e5e5;border-radius:12px;padding:16px;box-shadow:0 1px 3px rgba(0,0,0,0.05)}
+    img{width:100%;height:auto;border-radius:8px}
+    a{color:#0b5fff;text-decoration:none}
+    a:hover{text-decoration:underline}
+    .footer{margin-top:40px;color:#666;font-size:14px}
+  </style>
+</head>
+<body>
+  <h1>ben-breaux-works</h1>
+  <div class="muted">Customer Success & Technical Account Management dashboards (mock data)</div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Adoption Over Time</h3>
+      <p>Behavior change and time-to-value, month by month.</p>
+      <img src="screenshots/adoption_dashboard.png" alt="Adoption Over Time">
+      <p><a href="dashboards/adoption_metrics.py">View code</a></p>
+    </div>
+    <div class="card">
+      <h3>Portfolio Health Snapshot</h3>
+      <p>NRR, GRR, CSAT, and TTV for executive reviews.</p>
+      <img src="screenshots/account_health_dashboard.png" alt="Portfolio Health">
+      <p><a href="dashboards/cs_account_health.py">View code</a></p>
+    </div>
+    <div class="card">
+      <h3>gonggong weisheng xiangmu chengguo (pinyin)</h3>
+      <p>Public sector outcomes (before/after) with pinyin labels.</p>
+      <img src="screenshots/public_sector_dashboard.png" alt="Public Sector Outcomes">
+      <p><a href="dashboards/public_sector_outcomes_pinyin.py">View code</a></p>
+    </div>
+  </div>
+
+  <div class="footer">© 2025 Ben Breaux • Mock data • Built with Python (matplotlib)</div>
+</body>
+</html>
